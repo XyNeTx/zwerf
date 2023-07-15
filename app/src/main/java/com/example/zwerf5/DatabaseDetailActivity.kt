@@ -3,6 +3,7 @@ package com.example.zwerf5
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
@@ -23,6 +24,9 @@ class DatabaseDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_database_detail)
 
         id = findViewById(R.id.edTId)
+        id.visibility = View.GONE
+        val imageViewId = findViewById<ImageView>(R.id.imageViewId)
+        imageViewId.visibility = View.GONE
         ingredient = findViewById(R.id.edTIngredient)
         expiredate = findViewById(R.id.edTExpireDate)
         delete = findViewById(R.id.iVdel)

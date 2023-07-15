@@ -5,6 +5,7 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import java.util.UUID
 
 class DBHelper (context: Context): SQLiteOpenHelper(context, "Userdata",null,1) {
     override fun onCreate(db: SQLiteDatabase?) {
@@ -18,6 +19,7 @@ class DBHelper (context: Context): SQLiteOpenHelper(context, "Userdata",null,1) 
     fun saveuserdata(id: String, ingredient: String, expiredate: String): Boolean {
         val db = this.writableDatabase
         val cv = ContentValues()
+        val id = UUID.randomUUID().toString()
         cv.put("id",id)
         cv.put("ingredient",ingredient)
         cv.put("expiredate",expiredate)

@@ -5,7 +5,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.android.material.textfield.TextInputEditText
@@ -30,6 +32,7 @@ class AddDatabaseActivity : AppCompatActivity() {
         ingredient = findViewById(R.id.EtInputIngredient)
         expireDate = findViewById(R.id.EtInputExpireDate)
         id = findViewById(R.id.EtInputId)
+        id.visibility = View.GONE
         save = findViewById(R.id.saveBtn)
         db = DBHelper(this)
 
@@ -52,7 +55,7 @@ class AddDatabaseActivity : AppCompatActivity() {
             val ingredient = ingredient.text.toString()
             val expiredate = expireDate.text.toString()
             val savedata = db.saveuserdata(id, ingredient, expiredate)
-            if (TextUtils.isEmpty(id) || TextUtils.isEmpty(ingredient) || TextUtils.isEmpty(expiredate)) {
+            if (TextUtils.isEmpty(ingredient) || TextUtils.isEmpty(expiredate)) {
                 Toast.makeText(this, "Please input id & ingredient & expire date", Toast.LENGTH_SHORT).show()
             } else {
                 if (savedata == true) {
