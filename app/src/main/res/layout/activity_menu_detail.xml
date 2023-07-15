@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE9CC"
+    tools:context=".MenuDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/IvMenu"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ต้มกะทิหมู"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IvMenu" />
+
+        <TextView
+            android:id="@+id/TvIngredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="วัตถุดิบ"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvMenu" />
+
+        <TextView
+            android:id="@+id/TvMenuIngredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="
+        1.หมูแดดเดียว 300 กรัม\n
+        2. หอมแดงซอย 20 กรัม\n
+        3. หัวกะทิ 200 มิลลิลิตร\n
+        4. น้ำเปล่า 300 มิลลิลิตร\n
+        5. น้ำตาลปี๊บ 2 ช้อนโต๊ะ\n
+        6. น้ำปลา 1 ช้อนโต๊ะ\n
+        7.เกลือป่น 1 ช้อนชา\n
+        8. ใบมะกรูดฉีก 5 ใบ\n
+        9. ใบมะกรูดซอย 3 ใบ\n
+        10. พริกขี้หนูสวน 15 กรัม\n"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvIngredient" />
+
+        <TextView
+            android:id="@+id/TvHowto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="วิธีทำ"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvMenuIngredient" />
+
+        <TextView
+            android:id="@+id/TvMenuHowToDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="
+        1.หมูแดดเดียว 300 กรัม\n
+        2. หอมแดงซอย 20 กรัม\n
+        3. หัวกะทิ 200 มิลลิลิตร\n
+        4. น้ำเปล่า 300 มิลลิลิตร\n
+        5. น้ำตาลปี๊บ 2 ช้อนโต๊ะ\n
+        6. น้ำปลา 1 ช้อนโต๊ะ\n
+        7.เกลือป่น 1 ช้อนชา\n
+        8. ใบมะกรูดฉีก 5 ใบ\n
+        9. ใบมะกรูดซอย 3 ใบ\n
+        10. พริกขี้หนูสวน 15 กรัม\n
+        1.หมูแดดเดียว 300 กรัม\n
+        2. หอมแดงซอย 20 กรัม\n
+        3. หัวกะทิ 200 มิลลิลิตร\n
+        4. น้ำเปล่า 300 มิลลิลิตร\n
+        5. น้ำตาลปี๊บ 2 ช้อนโต๊ะ\n
+        6. น้ำปลา 1 ช้อนโต๊ะ\n
+        7.เกลือป่น 1 ช้อนชา\n
+        8. ใบมะกรูดฉีก 5 ใบ\n
+        9. ใบมะกรูดซอย 3 ใบ\n
+        10. พริกขี้หนูสวน 15 กรัม\n"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TvHowto" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

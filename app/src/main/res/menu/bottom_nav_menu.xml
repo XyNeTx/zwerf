@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Search"
+        android:icon="@drawable/baseline_search_24"
+        android:id="@+id/searchPage"/>
+    <item android:title="Add"
+        android:icon="@drawable/baseline_note_add_24"
+        android:id="@+id/addDataPage"/>
+    <item android:title="View"
+        android:icon="@drawable/baseline_preview_24"
+        android:id="@+id/viewDataPage"/>
+</menu>
